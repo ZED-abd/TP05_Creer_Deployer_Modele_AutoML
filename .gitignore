@@ -1,0 +1,16 @@
+# Environnement virtuel et caches Python
+.venv/
+__pycache__/
+*.pyc
+
+# Donnees regenerees par donnees.py, modeles (deja dans MLflow)
+data/
+models/
+
+# Serveur MLflow local
+mlflow.db
+mlartifacts/
+mlruns/
+.DS_Store
+rendu/
+TP05_Creer_Deployer_Modele_AutoML.pdf
