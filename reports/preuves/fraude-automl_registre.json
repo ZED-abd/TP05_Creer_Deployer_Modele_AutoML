@@ -1,0 +1,43 @@
+{
+  "nom": "fraude-automl",
+  "version": "1",
+  "run_id": "8892402e36a047c59157d90704f73f10",
+  "run_name": "automl-90s",
+  "params": {
+    "outil": "flaml",
+    "budget_s": "90",
+    "famille": "lgbm",
+    "cfg_n_estimators": "104",
+    "cfg_num_leaves": "4",
+    "cfg_min_child_samples": "43",
+    "cfg_learning_rate": "0.6558491573833527",
+    "cfg_log_max_bin": "5",
+    "cfg_colsample_bytree": "0.9051169955870563",
+    "cfg_reg_alpha": "0.0009765625",
+    "cfg_reg_lambda": "6.492993307502377"
+  },
+  "metrics": {
+    "f1": 0.8409,
+    "duree_recherche_s": 90.3
+  },
+  "flavors": {
+    "python_function": {
+      "env": {
+        "conda": "conda.yaml",
+        "virtualenv": "python_env.yaml"
+      },
+      "loader_module": "mlflow.sklearn",
+      "model_path": "model.pkl",
+      "predict_fn": "predict",
+      "python_version": "3.13.3"
+    },
+    "sklearn": {
+      "code": null,
+      "pickled_model": "model.pkl",
+      "serialization_format": "cloudpickle",
+      "sklearn_version": "1.9.1",
+      "skops_trusted_types": null
+    }
+  },
+  "dependance_verifiee": "lightgbm"
+}

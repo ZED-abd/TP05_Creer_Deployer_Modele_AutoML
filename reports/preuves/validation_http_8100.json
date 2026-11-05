@@ -1,0 +1,6 @@
+{
+  "port": 8100,
+  "appels_valides_HTTP_200": 422,
+  "appels_invalides_HTTP_400": 1,
+  "detail": "2 × (1 affichage + 10 échauffements + 200 mesures)"
+}

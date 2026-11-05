@@ -1,0 +1,2 @@
+reponse : 200 {'predictions': [1]}
+port 8101 | mediane : 46.1 ms | p95 : 51.8 ms

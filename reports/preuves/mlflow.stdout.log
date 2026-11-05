@@ -1,0 +1,78 @@
+Registry store URI not provided. Using backend store URI.
+2026/11/05 14:53:42 INFO:     127.0.0.1:60930 - "GET /health HTTP/1.1" 200 OK
+2026/11/05 14:55:51 INFO:     127.0.0.1:50531 - "GET /api/2.0/mlflow/experiments/get-by-name?experiment_name=tp5-automl-deploiement HTTP/1.1" 404 Not Found
+2026/11/05 14:55:52 INFO:     127.0.0.1:50532 - "POST /api/2.0/mlflow/experiments/create HTTP/1.1" 200 OK
+2026/11/05 14:55:52 INFO:     127.0.0.1:50531 - "GET /api/2.0/mlflow/experiments/get?experiment_id=1 HTTP/1.1" 200 OK
+2026/11/05 14:55:53 INFO:     127.0.0.1:50532 - "POST /api/2.0/mlflow/runs/create HTTP/1.1" 200 OK
+2026/11/05 14:55:53 INFO:     127.0.0.1:50531 - "POST /api/2.0/mlflow/runs/log-batch HTTP/1.1" 200 OK
+2026/11/05 14:55:53 INFO:     127.0.0.1:50531 - "POST /api/2.0/mlflow/runs/log-batch HTTP/1.1" 200 OK
+2026/11/05 14:55:53 INFO:     127.0.0.1:50531 - "POST /api/2.0/mlflow/runs/log-batch HTTP/1.1" 200 OK
+2026/11/05 14:55:53 INFO:     127.0.0.1:50531 - "GET /api/2.0/mlflow/runs/get?run_uuid=8892402e36a047c59157d90704f73f10&run_id=8892402e36a047c59157d90704f73f10 HTTP/1.1" 200 OK
+2026/11/05 14:55:53 INFO:     127.0.0.1:50531 - "GET /api/2.0/mlflow/runs/get?run_uuid=8892402e36a047c59157d90704f73f10&run_id=8892402e36a047c59157d90704f73f10 HTTP/1.1" 200 OK
+2026/11/05 14:55:53 INFO:     127.0.0.1:50532 - "POST /api/2.0/mlflow/logged-models HTTP/1.1" 200 OK
+2026/11/05 14:55:53 INFO:     127.0.0.1:50532 - "POST /api/2.0/mlflow/runs/outputs HTTP/1.1" 200 OK
+2026/11/05 14:55:53 INFO:     127.0.0.1:50531 - "GET /api/2.0/mlflow/runs/get?run_uuid=8892402e36a047c59157d90704f73f10&run_id=8892402e36a047c59157d90704f73f10 HTTP/1.1" 200 OK
+2026/11/05 14:55:53 INFO:     127.0.0.1:50531 - "GET /api/2.0/mlflow/metrics/get-history?run_uuid=8892402e36a047c59157d90704f73f10&metric_key=f1&run_id=8892402e36a047c59157d90704f73f10&max_results=25000 HTTP/1.1" 200 OK
+2026/11/05 14:55:53 INFO:     127.0.0.1:50531 - "GET /api/2.0/mlflow/metrics/get-history?run_uuid=8892402e36a047c59157d90704f73f10&metric_key=duree_recherche_s&run_id=8892402e36a047c59157d90704f73f10&max_results=25000 HTTP/1.1" 200 OK
+2026/11/05 14:55:53 INFO:     127.0.0.1:50531 - "POST /api/2.0/mlflow/runs/log-batch HTTP/1.1" 200 OK
+2026/11/05 14:55:54 INFO:     127.0.0.1:50534 - "GET /api/3.0/mlflow/server-info HTTP/1.1" 200 OK
+2026/11/05 14:56:05 INFO:     127.0.0.1:64685 - "GET /api/2.0/mlflow/logged-models/m-a6546151838443e3ac586adbec0ee187 HTTP/1.1" 200 OK
+2026/11/05 14:56:05 INFO:     127.0.0.1:64685 - "PATCH /api/2.0/mlflow/logged-models/m-a6546151838443e3ac586adbec0ee187 HTTP/1.1" 200 OK
+2026/11/05 14:56:06 INFO:     127.0.0.1:64686 - "POST /api/2.0/mlflow/registered-models/create HTTP/1.1" 200 OK
+2026/11/05 14:56:06 INFO:     127.0.0.1:64686 - "POST /api/2.0/mlflow/model-versions/create HTTP/1.1" 200 OK
+2026/11/05 14:56:06 INFO:     127.0.0.1:64685 - "GET /api/2.0/mlflow/logged-models/m-a6546151838443e3ac586adbec0ee187 HTTP/1.1" 200 OK
+2026/11/05 14:56:06 INFO:     127.0.0.1:64685 - "GET /api/2.0/mlflow/logged-models/m-a6546151838443e3ac586adbec0ee187 HTTP/1.1" 200 OK
+2026/11/05 14:56:06 INFO:     127.0.0.1:64685 - "PATCH /api/2.0/mlflow/logged-models/m-a6546151838443e3ac586adbec0ee187/tags HTTP/1.1" 200 OK
+2026/11/05 14:56:07 INFO:     127.0.0.1:64685 - "GET /api/2.0/mlflow/runs/get?run_uuid=8892402e36a047c59157d90704f73f10&run_id=8892402e36a047c59157d90704f73f10 HTTP/1.1" 200 OK
+2026/11/05 14:56:07 INFO:     127.0.0.1:64685 - "POST /api/2.0/mlflow/runs/update HTTP/1.1" 200 OK
+2026/11/05 14:56:13 INFO:     127.0.0.1:64692 - "GET /api/2.0/mlflow/model-versions/search?filter=name%3D%27fraude-automl%27&max_results=10000 HTTP/1.1" 200 OK
+2026/11/05 14:56:13 INFO:     127.0.0.1:64692 - "GET /api/2.0/mlflow/runs/get?run_uuid=8892402e36a047c59157d90704f73f10&run_id=8892402e36a047c59157d90704f73f10 HTTP/1.1" 200 OK
+2026/11/05 14:56:13 INFO:     127.0.0.1:64692 - "GET /api/2.0/mlflow/registered-models/get?name=fraude-automl HTTP/1.1" 200 OK
+2026/11/05 14:56:13 INFO:     127.0.0.1:64692 - "GET /api/2.0/mlflow/model-versions/get-download-uri?name=fraude-automl&version=1 HTTP/1.1" 200 OK
+2026/11/05 14:56:13 INFO:     127.0.0.1:64692 - "GET /api/2.0/mlflow/registered-models/get?name=fraude-automl HTTP/1.1" 200 OK
+2026/11/05 14:56:13 INFO:     127.0.0.1:64692 - "GET /api/2.0/mlflow/model-versions/get-download-uri?name=fraude-automl&version=1 HTTP/1.1" 200 OK
+2026/11/05 14:56:51 INFO:     127.0.0.1:52607 - "GET /api/2.0/mlflow/experiments/get-by-name?experiment_name=tp5-automl-deploiement HTTP/1.1" 200 OK
+2026/11/05 14:56:51 INFO:     127.0.0.1:52608 - "POST /api/2.0/mlflow/runs/create HTTP/1.1" 200 OK
+2026/11/05 14:56:51 INFO:     127.0.0.1:52607 - "POST /api/2.0/mlflow/runs/log-batch HTTP/1.1" 200 OK
+2026/11/05 14:56:51 INFO:     127.0.0.1:52607 - "POST /api/2.0/mlflow/runs/log-batch HTTP/1.1" 200 OK
+2026/11/05 14:56:52 INFO:     127.0.0.1:52607 - "GET /api/2.0/mlflow/runs/get?run_uuid=34f46822f6f04e4da7febb5b6d333862&run_id=34f46822f6f04e4da7febb5b6d333862 HTTP/1.1" 200 OK
+2026/11/05 14:56:52 INFO:     127.0.0.1:52608 - "POST /api/2.0/mlflow/logged-models HTTP/1.1" 200 OK
+2026/11/05 14:56:52 INFO:     127.0.0.1:52608 - "POST /api/2.0/mlflow/runs/outputs HTTP/1.1" 200 OK
+2026/11/05 14:56:52 INFO:     127.0.0.1:52607 - "GET /api/2.0/mlflow/runs/get?run_uuid=34f46822f6f04e4da7febb5b6d333862&run_id=34f46822f6f04e4da7febb5b6d333862 HTTP/1.1" 200 OK
+2026/11/05 14:56:52 INFO:     127.0.0.1:52607 - "GET /api/2.0/mlflow/metrics/get-history?run_uuid=34f46822f6f04e4da7febb5b6d333862&metric_key=f1&run_id=34f46822f6f04e4da7febb5b6d333862&max_results=25000 HTTP/1.1" 200 OK
+2026/11/05 14:56:52 INFO:     127.0.0.1:52607 - "GET /api/2.0/mlflow/metrics/get-history?run_uuid=34f46822f6f04e4da7febb5b6d333862&metric_key=duree_entrainement_s&run_id=34f46822f6f04e4da7febb5b6d333862&max_results=25000 HTTP/1.1" 200 OK
+2026/11/05 14:56:52 INFO:     127.0.0.1:52607 - "POST /api/2.0/mlflow/runs/log-batch HTTP/1.1" 200 OK
+2026/11/05 14:56:55 INFO:     127.0.0.1:52612 - "GET /api/3.0/mlflow/server-info HTTP/1.1" 200 OK
+2026/11/05 14:57:12 INFO:     127.0.0.1:57931 - "GET /api/2.0/mlflow/logged-models/m-493ecaf799c34468a91faa4340d83241 HTTP/1.1" 200 OK
+2026/11/05 14:57:12 INFO:     127.0.0.1:57931 - "PATCH /api/2.0/mlflow/logged-models/m-493ecaf799c34468a91faa4340d83241 HTTP/1.1" 200 OK
+2026/11/05 14:57:12 INFO:     127.0.0.1:57932 - "POST /api/2.0/mlflow/registered-models/create HTTP/1.1" 200 OK
+2026/11/05 14:57:12 INFO:     127.0.0.1:57932 - "POST /api/2.0/mlflow/model-versions/create HTTP/1.1" 200 OK
+2026/11/05 14:57:12 INFO:     127.0.0.1:57931 - "GET /api/2.0/mlflow/logged-models/m-493ecaf799c34468a91faa4340d83241 HTTP/1.1" 200 OK
+2026/11/05 14:57:12 INFO:     127.0.0.1:57931 - "GET /api/2.0/mlflow/logged-models/m-493ecaf799c34468a91faa4340d83241 HTTP/1.1" 200 OK
+2026/11/05 14:57:12 INFO:     127.0.0.1:57931 - "PATCH /api/2.0/mlflow/logged-models/m-493ecaf799c34468a91faa4340d83241/tags HTTP/1.1" 200 OK
+2026/11/05 14:57:12 INFO:     127.0.0.1:57931 - "GET /api/2.0/mlflow/runs/get?run_uuid=34f46822f6f04e4da7febb5b6d333862&run_id=34f46822f6f04e4da7febb5b6d333862 HTTP/1.1" 200 OK
+2026/11/05 14:57:12 INFO:     127.0.0.1:57931 - "POST /api/2.0/mlflow/runs/update HTTP/1.1" 200 OK
+2026/11/05 14:57:17 INFO:     127.0.0.1:57937 - "GET /api/2.0/mlflow/model-versions/search?filter=name%3D%27fraude-manuel%27&max_results=10000 HTTP/1.1" 200 OK
+2026/11/05 14:57:17 INFO:     127.0.0.1:57937 - "GET /api/2.0/mlflow/runs/get?run_uuid=34f46822f6f04e4da7febb5b6d333862&run_id=34f46822f6f04e4da7febb5b6d333862 HTTP/1.1" 200 OK
+2026/11/05 14:57:17 INFO:     127.0.0.1:57937 - "GET /api/2.0/mlflow/registered-models/get?name=fraude-manuel HTTP/1.1" 200 OK
+2026/11/05 14:57:17 INFO:     127.0.0.1:57937 - "GET /api/2.0/mlflow/model-versions/get-download-uri?name=fraude-manuel&version=1 HTTP/1.1" 200 OK
+2026/11/05 14:57:17 INFO:     127.0.0.1:57937 - "GET /api/2.0/mlflow/registered-models/get?name=fraude-manuel HTTP/1.1" 200 OK
+2026/11/05 14:57:17 INFO:     127.0.0.1:57937 - "GET /api/2.0/mlflow/model-versions/get-download-uri?name=fraude-manuel&version=1 HTTP/1.1" 200 OK
+2026/11/05 14:57:48 INFO:     127.0.0.1:54266 - "GET /api/2.0/mlflow/model-versions/search?filter=name%3D%27fraude-automl%27&max_results=10000 HTTP/1.1" 200 OK
+2026/11/05 14:57:49 INFO:     127.0.0.1:54266 - "GET /api/2.0/mlflow/registered-models/get?name=fraude-automl HTTP/1.1" 200 OK
+2026/11/05 14:57:49 INFO:     127.0.0.1:54266 - "POST /api/2.0/mlflow/registered-models/alias HTTP/1.1" 200 OK
+2026/11/05 14:57:53 INFO:     127.0.0.1:63997 - "GET /api/2.0/mlflow/model-versions/search?filter=name%3D%27fraude-manuel%27&max_results=10000 HTTP/1.1" 200 OK
+2026/11/05 14:57:53 INFO:     127.0.0.1:63997 - "GET /api/2.0/mlflow/registered-models/get?name=fraude-manuel HTTP/1.1" 200 OK
+2026/11/05 14:57:53 INFO:     127.0.0.1:63997 - "POST /api/2.0/mlflow/registered-models/alias HTTP/1.1" 200 OK
+2026/11/05 14:58:00 INFO:     127.0.0.1:64003 - "GET /api/2.0/mlflow/registered-models/alias?name=fraude-automl&alias=production HTTP/1.1" 200 OK
+2026/11/05 14:58:00 INFO:     127.0.0.1:64003 - "GET /api/2.0/mlflow/registered-models/get?name=fraude-automl HTTP/1.1" 200 OK
+2026/11/05 14:58:00 INFO:     127.0.0.1:64003 - "GET /api/2.0/mlflow/model-versions/get-download-uri?name=fraude-automl&version=1 HTTP/1.1" 200 OK
+2026/11/05 14:58:00 INFO:     127.0.0.1:64003 - "GET /api/2.0/mlflow/registered-models/alias?name=fraude-automl&alias=production HTTP/1.1" 200 OK
+2026/11/05 14:58:00 INFO:     127.0.0.1:64003 - "GET /api/2.0/mlflow/registered-models/get?name=fraude-automl HTTP/1.1" 200 OK
+2026/11/05 14:58:00 INFO:     127.0.0.1:64003 - "GET /api/2.0/mlflow/model-versions/get-download-uri?name=fraude-automl&version=1 HTTP/1.1" 200 OK
+2026/11/05 14:58:16 INFO:     127.0.0.1:64739 - "GET /api/2.0/mlflow/registered-models/alias?name=fraude-manuel&alias=production HTTP/1.1" 200 OK
+2026/11/05 14:58:16 INFO:     127.0.0.1:64739 - "GET /api/2.0/mlflow/registered-models/get?name=fraude-manuel HTTP/1.1" 200 OK
+2026/11/05 14:58:16 INFO:     127.0.0.1:64739 - "GET /api/2.0/mlflow/model-versions/get-download-uri?name=fraude-manuel&version=1 HTTP/1.1" 200 OK
+2026/11/05 14:58:16 INFO:     127.0.0.1:64739 - "GET /api/2.0/mlflow/registered-models/alias?name=fraude-manuel&alias=production HTTP/1.1" 200 OK
+2026/11/05 14:58:16 INFO:     127.0.0.1:64739 - "GET /api/2.0/mlflow/registered-models/get?name=fraude-manuel HTTP/1.1" 200 OK
+2026/11/05 14:58:16 INFO:     127.0.0.1:64739 - "GET /api/2.0/mlflow/model-versions/get-download-uri?name=fraude-manuel&version=1 HTTP/1.1" 200 OK
