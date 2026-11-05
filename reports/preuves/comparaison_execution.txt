@@ -1,230 +1,230 @@
-{
-  "manuel": {
-    "classe": "RandomForestClassifier",
-    "f1": 0.8669201520912547,
-    "matrice_confusion": [
-      [
-        1101,
-        15
-      ],
-      [
-        20,
-        114
-      ]
-    ],
-    "taille_octets": 14023161,
-    "taille_Mo": 13.373528480529785,
-    "parametres_modele": {
-      "bootstrap": true,
-      "ccp_alpha": 0.0,
-      "class_weight": null,
-      "criterion": "gini",
-      "max_depth": 16,
-      "max_features": "sqrt",
-      "max_leaf_nodes": null,
-      "max_samples": null,
-      "min_impurity_decrease": 0.0,
-      "min_samples_leaf": 1,
-      "min_samples_split": 2,
-      "min_weight_fraction_leaf": 0.0,
-      "monotonic_cst": null,
-      "n_estimators": 500,
-      "n_jobs": null,
-      "oob_score": false,
-      "random_state": 42,
-      "verbose": 0,
-      "warm_start": false
-    },
-    "registre": {
-      "nom": "fraude-manuel",
-      "version": "1",
-      "run_id": "34f46822f6f04e4da7febb5b6d333862",
-      "run_name": "manuel-rf-500-16",
-      "params": {
-        "outil": "scikit-learn",
-        "n_estimators": "500",
-        "max_depth": "16"
-      },
-      "metrics": {
-        "f1": 0.8669,
-        "duree_entrainement_s": 2.4
-      },
-      "flavors": {
-        "python_function": {
-          "env": {
-            "conda": "conda.yaml",
-            "virtualenv": "python_env.yaml"
-          },
-          "loader_module": "mlflow.sklearn",
-          "model_path": "model.skops",
-          "predict_fn": "predict",
-          "python_version": "3.13.3"
-        },
-        "sklearn": {
-          "code": null,
-          "pickled_model": "model.skops",
-          "serialization_format": "skops",
-          "sklearn_version": "1.9.1",
-          "skops_trusted_types": [
-            "sklearn.tree._tree.Tree"
-          ]
-        }
-      },
-      "dependance_verifiee": "scikit-learn"
-    },
-    "importances": [
-      [
-        "montant",
-        0.4789181690887832
-      ],
-      [
-        "anciennete",
-        0.23701837976583837
-      ],
-      [
-        "freq_24h",
-        0.1914995648282942
-      ],
-      [
-        "nuit",
-        0.09256388631708422
-      ]
-    ],
-    "nombre_arbres": 500,
-    "profondeur_parametree": 16,
-    "profondeurs_reelles": {
-      "min": 11,
-      "max": 16
-    },
-    "latences": [
-      {
-        "mediane_ms": 45.8,
-        "p95_ms": 54.1,
-        "preuve": "client_2_8101.txt"
-      },
-      {
-        "mediane_ms": 46.1,
-        "p95_ms": 51.8,
-        "preuve": "client_4_8101.txt"
-      }
-    ]
-  },
-  "automl": {
-    "classe": "LGBMClassifier",
-    "f1": 0.8409090909090909,
-    "matrice_confusion": [
-      [
-        1097,
-        19
-      ],
-      [
-        23,
-        111
-      ]
-    ],
-    "taille_octets": 65252,
-    "taille_Mo": 0.062229156494140625,
-    "parametres_modele": {
-      "boosting_type": "gbdt",
-      "class_weight": null,
-      "colsample_bytree": 0.9051169955870563,
-      "importance_type": "split",
-      "learning_rate": 0.6558491573833527,
-      "max_depth": -1,
-      "min_child_samples": 43,
-      "min_child_weight": 0.001,
-      "min_split_gain": 0.0,
-      "n_estimators": 104,
-      "n_jobs": -1,
-      "num_leaves": 4,
-      "objective": null,
-      "random_state": null,
-      "reg_alpha": 0.0009765625,
-      "reg_lambda": 6.492993307502377,
-      "subsample": 1.0,
-      "subsample_for_bin": 200000,
-      "subsample_freq": 0,
-      "max_bin": 31,
-      "verbose": -1
-    },
-    "registre": {
-      "nom": "fraude-automl",
-      "version": "1",
-      "run_id": "8892402e36a047c59157d90704f73f10",
-      "run_name": "automl-90s",
-      "params": {
-        "outil": "flaml",
-        "budget_s": "90",
-        "famille": "lgbm",
-        "cfg_n_estimators": "104",
-        "cfg_num_leaves": "4",
-        "cfg_min_child_samples": "43",
-        "cfg_learning_rate": "0.6558491573833527",
-        "cfg_log_max_bin": "5",
-        "cfg_colsample_bytree": "0.9051169955870563",
-        "cfg_reg_alpha": "0.0009765625",
-        "cfg_reg_lambda": "6.492993307502377"
-      },
-      "metrics": {
-        "f1": 0.8409,
-        "duree_recherche_s": 90.3
-      },
-      "flavors": {
-        "python_function": {
-          "env": {
-            "conda": "conda.yaml",
-            "virtualenv": "python_env.yaml"
-          },
-          "loader_module": "mlflow.sklearn",
-          "model_path": "model.pkl",
-          "predict_fn": "predict",
-          "python_version": "3.13.3"
-        },
-        "sklearn": {
-          "code": null,
-          "pickled_model": "model.pkl",
-          "serialization_format": "cloudpickle",
-          "sklearn_version": "1.9.1",
-          "skops_trusted_types": null
-        }
-      },
-      "dependance_verifiee": "lightgbm"
-    },
-    "importances": [
-      [
-        "montant",
-        116
-      ],
-      [
-        "anciennete",
-        87
-      ],
-      [
-        "freq_24h",
-        78
-      ],
-      [
-        "nuit",
-        31
-      ]
-    ],
-    "nombre_arbres": 104,
-    "profondeur_parametree": -1,
-    "profondeurs_reelles": {
-      "min": 2,
-      "max": 3
-    },
-    "latences": [
-      {
-        "mediane_ms": 9.7,
-        "p95_ms": 31.6,
-        "preuve": "client_1_8100.txt"
-      },
-      {
-        "mediane_ms": 10.1,
-        "p95_ms": 30.1,
-        "preuve": "client_3_8100.txt"
-      }
-    ]
-  }
-}
+{
+  "manuel": {
+    "classe": "RandomForestClassifier",
+    "f1": 0.8669201520912547,
+    "matrice_confusion": [
+      [
+        1101,
+        15
+      ],
+      [
+        20,
+        114
+      ]
+    ],
+    "taille_octets": 14023161,
+    "taille_Mo": 13.373528480529785,
+    "parametres_modele": {
+      "bootstrap": true,
+      "ccp_alpha": 0.0,
+      "class_weight": null,
+      "criterion": "gini",
+      "max_depth": 16,
+      "max_features": "sqrt",
+      "max_leaf_nodes": null,
+      "max_samples": null,
+      "min_impurity_decrease": 0.0,
+      "min_samples_leaf": 1,
+      "min_samples_split": 2,
+      "min_weight_fraction_leaf": 0.0,
+      "monotonic_cst": null,
+      "n_estimators": 500,
+      "n_jobs": null,
+      "oob_score": false,
+      "random_state": 42,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "registre": {
+      "nom": "fraude-manuel",
+      "version": "1",
+      "run_id": "34f46822f6f04e4da7febb5b6d333862",
+      "run_name": "manuel-rf-500-16",
+      "params": {
+        "outil": "scikit-learn",
+        "n_estimators": "500",
+        "max_depth": "16"
+      },
+      "metrics": {
+        "f1": 0.8669,
+        "duree_entrainement_s": 2.4
+      },
+      "flavors": {
+        "python_function": {
+          "env": {
+            "conda": "conda.yaml",
+            "virtualenv": "python_env.yaml"
+          },
+          "loader_module": "mlflow.sklearn",
+          "model_path": "model.skops",
+          "predict_fn": "predict",
+          "python_version": "3.13.3"
+        },
+        "sklearn": {
+          "code": null,
+          "pickled_model": "model.skops",
+          "serialization_format": "skops",
+          "sklearn_version": "1.9.1",
+          "skops_trusted_types": [
+            "sklearn.tree._tree.Tree"
+          ]
+        }
+      },
+      "dependance_verifiee": "scikit-learn"
+    },
+    "importances": [
+      [
+        "montant",
+        0.4789181690887832
+      ],
+      [
+        "anciennete",
+        0.23701837976583837
+      ],
+      [
+        "freq_24h",
+        0.1914995648282942
+      ],
+      [
+        "nuit",
+        0.09256388631708422
+      ]
+    ],
+    "nombre_arbres": 500,
+    "profondeur_parametree": 16,
+    "profondeurs_reelles": {
+      "min": 11,
+      "max": 16
+    },
+    "latences": [
+      {
+        "mediane_ms": 45.8,
+        "p95_ms": 54.1,
+        "preuve": "client_2_8101.txt"
+      },
+      {
+        "mediane_ms": 46.1,
+        "p95_ms": 51.8,
+        "preuve": "client_4_8101.txt"
+      }
+    ]
+  },
+  "automl": {
+    "classe": "LGBMClassifier",
+    "f1": 0.8409090909090909,
+    "matrice_confusion": [
+      [
+        1097,
+        19
+      ],
+      [
+        23,
+        111
+      ]
+    ],
+    "taille_octets": 65252,
+    "taille_Mo": 0.062229156494140625,
+    "parametres_modele": {
+      "boosting_type": "gbdt",
+      "class_weight": null,
+      "colsample_bytree": 0.9051169955870563,
+      "importance_type": "split",
+      "learning_rate": 0.6558491573833527,
+      "max_depth": -1,
+      "min_child_samples": 43,
+      "min_child_weight": 0.001,
+      "min_split_gain": 0.0,
+      "n_estimators": 104,
+      "n_jobs": -1,
+      "num_leaves": 4,
+      "objective": null,
+      "random_state": null,
+      "reg_alpha": 0.0009765625,
+      "reg_lambda": 6.492993307502377,
+      "subsample": 1.0,
+      "subsample_for_bin": 200000,
+      "subsample_freq": 0,
+      "max_bin": 31,
+      "verbose": -1
+    },
+    "registre": {
+      "nom": "fraude-automl",
+      "version": "1",
+      "run_id": "8892402e36a047c59157d90704f73f10",
+      "run_name": "automl-90s",
+      "params": {
+        "outil": "flaml",
+        "budget_s": "90",
+        "famille": "lgbm",
+        "cfg_n_estimators": "104",
+        "cfg_num_leaves": "4",
+        "cfg_min_child_samples": "43",
+        "cfg_learning_rate": "0.6558491573833527",
+        "cfg_log_max_bin": "5",
+        "cfg_colsample_bytree": "0.9051169955870563",
+        "cfg_reg_alpha": "0.0009765625",
+        "cfg_reg_lambda": "6.492993307502377"
+      },
+      "metrics": {
+        "f1": 0.8409,
+        "duree_recherche_s": 90.3
+      },
+      "flavors": {
+        "python_function": {
+          "env": {
+            "conda": "conda.yaml",
+            "virtualenv": "python_env.yaml"
+          },
+          "loader_module": "mlflow.sklearn",
+          "model_path": "model.pkl",
+          "predict_fn": "predict",
+          "python_version": "3.13.3"
+        },
+        "sklearn": {
+          "code": null,
+          "pickled_model": "model.pkl",
+          "serialization_format": "cloudpickle",
+          "sklearn_version": "1.9.1",
+          "skops_trusted_types": null
+        }
+      },
+      "dependance_verifiee": "lightgbm"
+    },
+    "importances": [
+      [
+        "montant",
+        116
+      ],
+      [
+        "anciennete",
+        87
+      ],
+      [
+        "freq_24h",
+        78
+      ],
+      [
+        "nuit",
+        31
+      ]
+    ],
+    "nombre_arbres": 104,
+    "profondeur_parametree": -1,
+    "profondeurs_reelles": {
+      "min": 2,
+      "max": 3
+    },
+    "latences": [
+      {
+        "mediane_ms": 9.7,
+        "p95_ms": 31.6,
+        "preuve": "client_1_8100.txt"
+      },
+      {
+        "mediane_ms": 10.1,
+        "p95_ms": 30.1,
+        "preuve": "client_3_8100.txt"
+      }
+    ]
+  }
+}

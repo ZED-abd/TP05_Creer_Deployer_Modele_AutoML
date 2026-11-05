@@ -1,37 +1,37 @@
-{
-  "nom": "fraude-manuel",
-  "version": "1",
-  "run_id": "34f46822f6f04e4da7febb5b6d333862",
-  "run_name": "manuel-rf-500-16",
-  "params": {
-    "outil": "scikit-learn",
-    "n_estimators": "500",
-    "max_depth": "16"
-  },
-  "metrics": {
-    "f1": 0.8669,
-    "duree_entrainement_s": 2.4
-  },
-  "flavors": {
-    "python_function": {
-      "env": {
-        "conda": "conda.yaml",
-        "virtualenv": "python_env.yaml"
-      },
-      "loader_module": "mlflow.sklearn",
-      "model_path": "model.skops",
-      "predict_fn": "predict",
-      "python_version": "3.13.3"
-    },
-    "sklearn": {
-      "code": null,
-      "pickled_model": "model.skops",
-      "serialization_format": "skops",
-      "sklearn_version": "1.9.1",
-      "skops_trusted_types": [
-        "sklearn.tree._tree.Tree"
-      ]
-    }
-  },
-  "dependance_verifiee": "scikit-learn"
-}
+{
+  "nom": "fraude-manuel",
+  "version": "1",
+  "run_id": "34f46822f6f04e4da7febb5b6d333862",
+  "run_name": "manuel-rf-500-16",
+  "params": {
+    "outil": "scikit-learn",
+    "n_estimators": "500",
+    "max_depth": "16"
+  },
+  "metrics": {
+    "f1": 0.8669,
+    "duree_entrainement_s": 2.4
+  },
+  "flavors": {
+    "python_function": {
+      "env": {
+        "conda": "conda.yaml",
+        "virtualenv": "python_env.yaml"
+      },
+      "loader_module": "mlflow.sklearn",
+      "model_path": "model.skops",
+      "predict_fn": "predict",
+      "python_version": "3.13.3"
+    },
+    "sklearn": {
+      "code": null,
+      "pickled_model": "model.skops",
+      "serialization_format": "skops",
+      "sklearn_version": "1.9.1",
+      "skops_trusted_types": [
+        "sklearn.tree._tree.Tree"
+      ]
+    }
+  },
+  "dependance_verifiee": "scikit-learn"
+}

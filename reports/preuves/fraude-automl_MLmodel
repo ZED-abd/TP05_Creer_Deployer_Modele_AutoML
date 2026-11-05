@@ -1,37 +1,36 @@
-artifact_path: file:[PROJET]/mlartifacts/1/models/m-a6546151838443e3ac586adbec0ee187/artifacts
-flavors:
-  python_function:
-    env:
-      conda: conda.yaml
-      virtualenv: python_env.yaml
-    loader_module: mlflow.sklearn
-    model_path: model.pkl
-    predict_fn: predict
-    python_version: 3.13.3
-  sklearn:
-    code: null
-    pickled_model: model.pkl
-    serialization_format: cloudpickle
-    sklearn_version: 1.9.1
-    skops_trusted_types: null
-is_signature_from_type_hint: false
-mlflow_version: 3.18.0
-model_id: m-a6546151838443e3ac586adbec0ee187
-model_size_bytes: 65578
-model_uuid: m-a6546151838443e3ac586adbec0ee187
-prompts: null
-run_id: 8892402e36a047c59157d90704f73f10
-saved_input_example_info:
-  artifact_path: input_example.json
-  pandas_orient: split
-  serving_input_path: serving_input_example.json
-  type: dataframe
-signature:
-  inputs: '[{"type": "double", "name": "montant", "required": true}, {"type": "long",
-    "name": "anciennete", "required": true}, {"type": "long", "name": "freq_24h",
-    "required": true}, {"type": "long", "name": "nuit", "required": true}]'
-  outputs: '[{"type": "long", "required": true}]'
-  params: null
-type_hint_from_example: false
-utc_time_created: '2026-11-05 14:55:53.878611'
-
+artifact_path: file:[PROJET]/mlartifacts/1/models/m-a6546151838443e3ac586adbec0ee187/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.3
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.9.1
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.18.0
+model_id: m-a6546151838443e3ac586adbec0ee187
+model_size_bytes: 65578
+model_uuid: m-a6546151838443e3ac586adbec0ee187
+prompts: null
+run_id: 8892402e36a047c59157d90704f73f10
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "montant", "required": true}, {"type": "long",
+    "name": "anciennete", "required": true}, {"type": "long", "name": "freq_24h",
+    "required": true}, {"type": "long", "name": "nuit", "required": true}]'
+  outputs: '[{"type": "long", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-11-05 14:55:53.878611'

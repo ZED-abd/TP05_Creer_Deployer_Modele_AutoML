@@ -1,12 +1,12 @@
-2026/11/05 14:56:43 INFO mlflow.agent.hint: Load the `mlflow-trace-instrumentation` skill at [PROJET]\.venv\Lib\site-packages\mlflow\assistant\skills\mlflow-trace-instrumentation\SKILL.md before writing any tracing code; it ships with this MLflow install. Set MLFLOW_DISABLE_AGENT_HINT=1 to silence this.
-[PROJET]\.venv\Lib\site-packages\mlflow\types\utils.py:440: UserWarning: Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever these columns may have missing values. See `Handling Integers With Missing Values <https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
-  warnings.warn(
-[PROJET]\.venv\Lib\site-packages\mlflow\types\utils.py:440: UserWarning: Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever these columns may have missing values. See `Handling Integers With Missing Values <https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
-  warnings.warn(
-Successfully registered model 'fraude-manuel'.
-2026/11/05 14:57:12 INFO mlflow.store.model_registry.abstract_store: Waiting up to 300 seconds for model version to finish creation. Model name: fraude-manuel, version 1
-Created version '1' of model 'fraude-manuel'.
-modele manuel : F1 = 0.8669 | entrainement 2.4 s
-🏃 View run manuel-rf-500-16 at: http://127.0.0.1:5000/#/experiments/1/runs/34f46822f6f04e4da7febb5b6d333862
-🧪 View experiment at: http://127.0.0.1:5000/#/experiments/1
-enregistre : fraude-manuel, version 1
+2026/11/05 14:56:43 INFO mlflow.agent.hint: Load the `mlflow-trace-instrumentation` skill at [PROJET]\.venv\Lib\site-packages\mlflow\assistant\skills\mlflow-trace-instrumentation\SKILL.md before writing any tracing code; it ships with this MLflow install. Set MLFLOW_DISABLE_AGENT_HINT=1 to silence this.
+[PROJET]\.venv\Lib\site-packages\mlflow\types\utils.py:440: UserWarning: Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever these columns may have missing values. See `Handling Integers With Missing Values <https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  warnings.warn(
+[PROJET]\.venv\Lib\site-packages\mlflow\types\utils.py:440: UserWarning: Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever these columns may have missing values. See `Handling Integers With Missing Values <https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  warnings.warn(
+Successfully registered model 'fraude-manuel'.
+2026/11/05 14:57:12 INFO mlflow.store.model_registry.abstract_store: Waiting up to 300 seconds for model version to finish creation. Model name: fraude-manuel, version 1
+Created version '1' of model 'fraude-manuel'.
+modele manuel : F1 = 0.8669 | entrainement 2.4 s
+🏃 View run manuel-rf-500-16 at: http://127.0.0.1:5000/#/experiments/1/runs/34f46822f6f04e4da7febb5b6d333862
+🧪 View experiment at: http://127.0.0.1:5000/#/experiments/1
+enregistre : fraude-manuel, version 1

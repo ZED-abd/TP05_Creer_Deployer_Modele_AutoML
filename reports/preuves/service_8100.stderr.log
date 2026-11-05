@@ -1,10 +1,9 @@
-2026/11/05 14:57:56 INFO mlflow.agent.hint: Load the `mlflow-trace-instrumentation` skill at [PROJET]\.venv\Lib\site-packages\mlflow\assistant\skills\mlflow-trace-instrumentation\SKILL.md before writing any tracing code; it ships with this MLflow install. Set MLFLOW_DISABLE_AGENT_HINT=1 to silence this.
-2026/11/05 14:58:00 INFO mlflow.models.flavor_backend_registry: Selected backend for flavor 'python_function'
-2026/11/05 14:58:00 INFO mlflow.pyfunc.backend: === Running command 'uvicorn --host 127.0.0.1 --port 8100 --workers 1 mlflow.pyfunc.scoring_server.app:app'
-2026/11/05 14:58:03 INFO mlflow.agent.hint: Load the `mlflow-trace-instrumentation` skill at [PROJET]\.venv\Lib\site-packages\mlflow\assistant\skills\mlflow-trace-instrumentation\SKILL.md before writing any tracing code; it ships with this MLflow install. Set MLFLOW_DISABLE_AGENT_HINT=1 to silence this.
-INFO:     Started server process [20844]
-INFO:     Waiting for application startup.
-INFO:     Application startup complete.
-INFO:     Uvicorn running on http://127.0.0.1:8100 (Press CTRL+C to quit)
-2026/11/05 14:59:11 WARNING mlflow.pyfunc.scoring_server: If using `instances` as input key, we internally convert the data type from `records` (List[Dict]) type to `list` (Dict[str, List]) type if the data is a pandas dataframe representation. This might cause schema changes. Please use `inputs` to avoid this conversion.
-
+2026/11/05 14:57:56 INFO mlflow.agent.hint: Load the `mlflow-trace-instrumentation` skill at [PROJET]\.venv\Lib\site-packages\mlflow\assistant\skills\mlflow-trace-instrumentation\SKILL.md before writing any tracing code; it ships with this MLflow install. Set MLFLOW_DISABLE_AGENT_HINT=1 to silence this.
+2026/11/05 14:58:00 INFO mlflow.models.flavor_backend_registry: Selected backend for flavor 'python_function'
+2026/11/05 14:58:00 INFO mlflow.pyfunc.backend: === Running command 'uvicorn --host 127.0.0.1 --port 8100 --workers 1 mlflow.pyfunc.scoring_server.app:app'
+2026/11/05 14:58:03 INFO mlflow.agent.hint: Load the `mlflow-trace-instrumentation` skill at [PROJET]\.venv\Lib\site-packages\mlflow\assistant\skills\mlflow-trace-instrumentation\SKILL.md before writing any tracing code; it ships with this MLflow install. Set MLFLOW_DISABLE_AGENT_HINT=1 to silence this.
+INFO:     Started server process [20844]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8100 (Press CTRL+C to quit)
+2026/11/05 14:59:11 WARNING mlflow.pyfunc.scoring_server: If using `instances` as input key, we internally convert the data type from `records` (List[Dict]) type to `list` (Dict[str, List]) type if the data is a pandas dataframe representation. This might cause schema changes. Please use `inputs` to avoid this conversion.
